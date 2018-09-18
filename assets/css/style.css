@@ -1,0 +1,192 @@
+html {
+    color: #777777;
+    line-height: 1.7em;
+}
+
+body {
+    background-image: url("../images/qbkls.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    letter-spacing: 1.1px;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    border-bottom: 2px solid rgb(194, 194, 194);
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+.headerInnerDiv {
+    max-width: 960px;
+    margin: auto;
+    padding: 0px;
+    height: 80px
+}
+
+.topTabHeader {
+    color: white;
+    background: #4aaaa5;
+    height: 55px;
+    font-size: 1.8em;
+    padding: 25px 20px 0px 20px; /* note no commas */
+    float: left;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(142, 142, 142);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.navigationLinks {
+    position: relative;
+    float: right;
+    padding-top: 20px;
+    color: rgb(148, 147, 149);
+    margin-top: 10px;
+}
+
+.opaque {
+    opacity: 0.5;
+    padding: 0px 10px;
+}
+
+HR {
+    border: 1.5px solid;
+    color: #d8d8d8;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.8em;
+}
+
+footer {
+    color: lightgrey;
+    background-color: #666666;
+    text-align: center;
+    font-size: .8em;
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    z-index: 1;
+}
+
+footer hr {
+    height: 5px;
+    background: #4aaaa5;
+    margin-top: 0px;
+    border: 0px;
+}
+
+.mainSection {
+    margin: 110px 0px 75px 0px;
+    padding: 0px 30px 30px 30px;
+    max-width: 900px;
+    background-color: #ffffff;
+    margin: 110px auto 75px auto;
+    border: 1px solid #dddddd;
+    line-height: 2;
+}
+
+#bioPicture {
+    float: left;
+    padding: 0px 25px 25px 0px;
+}
+
+footer p {
+    padding-top: 0px;
+}
+
+.singleLineInputBox {
+    /* width: 900px; */
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+textarea {
+    /* width: 900px; */
+    width: 100%;
+    height: 200px;
+    border: 1px solid #dddddd;
+    margin-top: 5px;
+}
+
+form {
+    font-size: 1.1em;
+}
+
+input[type=submit] {
+    color: white;
+    background: #4aaaa5;
+    width: 115px;
+    height: 40px;
+    font-size: 1.05em;
+}
+
+input[type=submit]:hover {
+    border: 2px solid black;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(106, 106, 106);
+    opacity: 1; /* Firefox */
+    padding-left: 10px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(106, 106, 106);
+    padding-left: 10px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(106, 106, 106);
+    padding-left: 10px;
+}
+
+.portfolioImageBox {
+    max-width: 274px;
+    height: 205px;
+    padding: 0px;
+    float: left;
+    margin: 40px 40px 0px 0px;
+}
+
+.portfolioImageBox p {
+    background: rgb(65, 160, 155);
+    text-align: center;
+    color: white;
+    float: left;
+    width: 274px;
+    position: relative;
+    top: -95px;
+    height: 45px;
+    font-size: 1.22em;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-top: 15px;
+}
+
+#portfolioSection {
+    overflow: auto; /* This allows floated elements (picture divs) to have background color */
+}
+
+/* Todo: fix fonts - they are close but don't match. */
