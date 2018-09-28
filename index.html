@@ -2,21 +2,38 @@
 <html>
 <head>
 	<title>Retro Landing Page...</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<section>
-		<h1>Retro Landing Page</h1>
-		<img src="underconstruction.gif">
-		<p>
-			Holy cow, this is one ugly looking website! 1994 called, and they want their style back.
-		</p>
+		
+		<div class="container bg-secondary rounded mt-5">
+			<div class="row">
+				<div class="col col-sm-12">
+					<h1>Retro Landing Page</h1>
+					<div class="card bg-secondary border-0">
+						<img src="underconstruction.gif">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-12">
+					<p>
+						Holy cow, this is one ugly looking website! 1994 called, and they want their style back.
+					</p>
+					<p>
+						Todo: write actual landing page.
+					</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<footer>
-		<div class="footerText">
-			You are visitor number: <span id="fakeCounter">1</span>
-		</div>
+		<div>Fake Visitor Counter: <span id="fakeCounter" style="border: 1px solid black;">1</span></div>
+		<div>See if you can get the high score!</div>
 	</footer>
 	<script type="text/javascript" src="script.js"></script>
 </body>
+<!--  -->
 </html>

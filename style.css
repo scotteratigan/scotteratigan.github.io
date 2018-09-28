@@ -1,31 +1,26 @@
 body {
-	margin: 0px;
-	padding: 0px;
 	text-align: center;
 }
 
-section {
-	background: white;
-	width: 75%;
-	margin: 0 auto;
-	background: grey;
-	height:75vh;
-}
+/*No one reads this stuff, why would you put a message in the CSS?
+Why not?!*/
 
 h1 {
-	padding-top: 100px;
+	padding-top: 5%;
+	text-shadow: 2px 2px #ff0000;
 }
 
 footer {
 	text-align: center;
 	position: fixed;
-	margin: 0px auto;
+	padding-top: 10px;
+	margin: 10px auto 0px auto;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	height: 50px;
+	height: 76px;
 }
 
-.footerText {
-	padding-top: 10px;
+#fakeCounter {
+	border: 1px solid black;
 }
