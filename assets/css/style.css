@@ -107,6 +107,9 @@
 .text-warning { color: var(--warning-color) !important; }
 
 /* css specific to portfolio page */
+a {
+	color: white;
+}
 
 body {
 	background: url(../images/wooden.jpg) center;
