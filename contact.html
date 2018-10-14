@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
-	<title>About Me</title>
+	<title>Contact</title>
 </head>
 <body>
 	<header>
@@ -40,30 +40,43 @@
 
 	<main>
 		<div class="container-fluid pb-5">
-		<!-- Main Section -->
+			<!-- Main Section Content -->
 			<div class="row mt-5 mx-5">
-				<div class="col mx-4 bg-white border border-secondary">
+				<div class="col mx-4 bg-white border border-secondary"> <!-- note: setting px-0 here makes h1 overflow the div... why? answer: rows in Bootstrap have a -15 px margin by default -->
 					<div class="row py-3">
 						<div class="col">
-							<h1 class="text-secondary">About Me</h1>
+							<h1 class="text-secondary">Contact</h1>
 							<hr class="bg-info border-0"> <!-- size="4" is overridden by the reset scss in bootstrap, normally that would give the hr height -->
 						</div>
 					</div>
-					<div class="row mx-0 px-4">
-						<div class="col text-primary px-0">
-							<img class="float-left mr-4 border border-secondary" src="assets/images/me.jpg">
-							<p>In West Philadelphia, born and raised, but on a computer, I spent most of my days. I attended Powell Elementary School, Julia R. Masterman Middle School, and Central High School (which is actually in North Philadelphia). After finishing high school, I attended Drexel University for Computer Science and Temple University for Political Science & International Relations. I held a variety of jobs while living in Philadelphia, including catering work, babysitting, IT support for the Philadelphia Streets Department and freelance IT work, a licensed Realtor, a server for an Italian restaurant, and a cook for a cafe.</p>
-							<p>About 10 years ago, I realized I wanted to escape the hot summers and cold, dreary winters of Philadelphia and so I decided to move to warm and sunny San Francisco instead! (It turns out the Sunset in July can be quite cold in shorts and t-shirts, whoops!) Once I arrived, I held a variety of jobs including canvassing for Environment California, working at a Mediterranean restaurant, and others. I eventually ended up working at the local cafe chain La Boulange, now known as La Boulangerie de San Francisco. I started as a cashier, but I quickly learned the other aspects of the cafe, and in time worked as a supervisor, assistant manager, and general manager before taking on more IT tasks and moving to the central office to work as an Operations Specialist. When La Boulange was closed by Starbucks, I was re-hired as the Operations Manager to help oversee the re-opening of 5 cafes (now 8). I left La Boulangerie de San Francisco this year in order to change careers and pursue my dream of becoming a web developer.</p>
-							<p>Along the way, I met my wife Jessica, an Elementary school teacher, while playing soccer in Golden Gate Park. We got married in 2015, and now have a son named Wesley, almost 2 years old, who now makes many of our decisions for us! We live in the Rockridge area of Oakland.</p>
+					<div class="row mx-0">
+						<div class="col text-primary">
+							
+							<form class="pb-4">
+								<div class="form-group">
+									<label for="inputName">Name</label>
+									<input type="text" class="form-control" id="inputName" aria-describedby="enterName" placeholder="Firstname Lastname">
+								</div>
+								<div class="form-group">
+									<label for="inputEmail">Email address</label>
+									<input type="password" class="form-control" id="inputEmail" aria-describedby="enterEmail" placeholder="email@domain.tld">
+								</div>
+
+								<div class="form-group">
+									<label for="emailMessage">Message</label>
+									<textarea class="form-control" id="emailMessage" rows="10"  aria-describedby="enterMessage" placeholder="Dear Mr. Scott, ..."></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+
 						</div>
 					</div>
 				</div>
 			</div>
-		<!-- /Main Section Content -->
+			<!-- /Main Section Content -->
 		</div>
-	<!-- /Main Div -->
 	</main>
-
+	<!-- /Main Div -->
 	<!-- Footer -->
 	<footer class="mt-5">
 		<div class="container-fluid fixed-bottom">
@@ -74,7 +87,6 @@
 			</div>
 		</div>
 	</footer>
-	<!-- /Footer -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

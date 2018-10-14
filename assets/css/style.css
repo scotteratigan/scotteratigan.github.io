@@ -1,0 +1,154 @@
+/*
+	Override Bootstrap Colors v1.1 by Scott Ratigan 2018/09/23
+	Purpose: override the default bootstrap colors for the most basic elements: text-color, bg-color, border-color without using SASS.
+	Does not yet style all elements.
+
+	To use: change one of the color variables below. To reset back, the default value is also included.
+	Color groups are: danger/dark/info/light/primary/secondary/warning. Using primary for all examples below:
+	primary-color 			:	used for bg-primary, border-primary, text-primary as well as button background, button border 
+	primary-color-seconary	:	alternate shade of primary color, a few shades lighter (darker on light colors)
+	primary-color-alternate :	disabled items, again typically lighter
+	primary-color-hover		:	btn-primary:hover
+
+	See https://github.com/scotteratigan/bootstrap_color_override for more info.
+
+*/
+
+:root {
+	--danger-color: #dc3545; /* #dc3545 */
+	--danger-color-alternate: #dc3545; /* #dc3545 */
+	--danger-color-hover: #c82333; /* #c82333 */
+	--danger-color-secondary: #f8d7da; /* #f8d7da */
+	
+	--dark-color: #343a40; /* #343a40 */
+	--dark-color-alternate: #343a40; /* #343a40 */
+	--dark-color-hover: #23272b; /* #23272b */
+	--dark-color-secondary: #d6d8d9; /* #d6d8d9 */
+	
+	--info-color: #17a2b8; /* #17a2b8 */
+	--info-color-alternate: #17a2b8; /* #17a2b8 */
+	--info-color-hover: #138496; /* #138496 */
+	--info-color-secondary: #d1ecf1; /* #d1ecf1 */
+	
+	--light-color: #f8f9fa; /* #f8f9fa */
+	--light-color-alternate: #f8f9fa; /* #f8f9fa */
+	--light-color-hover: #e2e6ea; /* #e2e6ea */
+	--light-color-secondary: #fefefe; /* #fefefe */
+
+	--primary-color: #007bff; /* #007bff */
+	--primary-color-alternate: #007bff; /* #007bff */
+	--primary-color-hover: #0069d9; /* #0069d9 */
+	--primary-color-secondary: #cce5ff; /* cce5ff */
+	
+	--secondary-color: #6c757d; /* #6c757d */
+	--secondary-color-alternate: #6c757d; /* #6c757d */
+	--secondary-color-hover: #5a6268; /* 5a6268 */
+	--secondary-color-secondary: #e2e3e5; /* #e2e3e5 */
+
+	--success-color: #28a745; /* #28a745 */
+	--success-color-alternate: #28a745; /* #28a745 */
+	--success-color-hover: #218838; /* #218838 */
+	--success-color-secondary: #d4edda; /* #d4edda */
+
+	--warning-color: #ffc107; /* #ffc107 */
+	--warning-color-alternate: #ffc107; /* #ffc107 */
+	--warning-color-hover: #e0a800; /* #e0a800 */
+	--warning-color-secondary: #fff3cd; /* #fff3cd */
+
+	/* Override on color settings: */
+	--primary-color: #666666; /* dark grey */
+	--primary-color-secondary: #d6d8d9; /*light grey*/
+	--secondary-color: cadetblue; /* cadetblue */
+	--secondary-color-secondary: #afcecf; /*lighter shade of cadetblue */
+	--info-color: #b3b3b3; /*light/medium grey*/
+
+	/* Below section is optional - if you set a light color for a typically dark element, or vice-versa, you may want to change the text color: */
+	--danger-color-text: var(--light-color);
+	--dark-color-text: var(--light-color);
+	--info-color-text: var(--light-color);
+	--light-color-text: var(--dark-color); /*dark*/
+	--primary-color-text: var(--light-color);
+	--secondary-color-text: var(--light-color);
+	--success-color-text: var(--light-color);
+	--warning-color-text: var(--dark-color); /*dark*/
+
+	/* Override on text settings: */
+
+	/* none currently set */
+}
+
+/*	Do not make changes below this line
+	Note: whitespace chosen for density and line-sorting ability.
+	Important must be used for these selectors to work consistently on all elements. (Test it if you don't believe me!) */
+
+.bg-danger { background: var(--danger-color) !important; }
+.bg-dark { background: var(--dark-color) !important; }
+.bg-info { background: var(--info-color) !important; }
+.bg-light { background: var(--light-color) !important; }
+.bg-primary { background: var(--primary-color) !important; }
+.bg-secondary { background: var(--secondary-color) !important; }
+.bg-success { background: var(--success-color) !important; }
+.bg-warning { background: var(--warning-color) !important; }
+.border-danger { border-color: var(--danger-color) !important; }
+.border-dark { border-color: var(--dark-color) !important; }
+.border-info { border-color: var(--info-color) !important; }
+.border-light { border-color: var(--light-color) !important; }
+.border-primary { border-color: var(--primary-color) !important; }
+.border-secondary { border-color: var(--secondary-color) !important; }
+.border-success { border-color: var(--success-color) !important; }
+.border-warning { border-color: var(--warning-color) !important; }
+.text-danger { color: var(--danger-color) !important; }
+.text-dark { color: var(--dark-color) !important; }
+.text-info { color: var(--info-color) !important; }
+.text-light { color: var(--light-color) !important; }
+.text-primary { color: var(--primary-color) !important; }
+.text-secondary { color: var(--secondary-color) !important; }
+.text-success { color: var(--success-color) !important; }
+.text-warning { color: var(--warning-color) !important; }
+
+/* css specific to portfolio page */
+
+body {
+	background: url(../images/wooden.jpg) center;
+	background-size: 100% auto; /*100% x-axis (stretch), auto on y axis (tile)*/
+	background-color: #cccccc; /* Alternately, with no pic. */
+	/*Note: I am not explicitly setting fonts because I am choosing to use Bootstrap's default typography*/
+}
+
+hr {
+	height: .10rem;
+}
+
+.border-width-5 {
+	border-width: 5px !important;
+}
+
+.card-caption {
+	text-align: center;
+	margin-top: 6rem!important;
+	padding: 0px;
+	height: 1.6rem;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.navbar-brand {
+	font-size: 2.2rem;
+	margin: 0px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/*In order to prevent the navigation hamburger from wrapping in the navbar
+and to give more space for screen content on narrow devices:*/
+@media all and (max-width: 505px) {
+	.container-fluid,
+	.navbar,
+	.navbar-brand {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
+	}
+}
