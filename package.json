@@ -1,7 +1,7 @@
 {
   "name": "scotte",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^4.3.1",
@@ -16,7 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && node publish",
+    "build": "react-scripts build",
+    "publish": "cd build && git checkout -b production && git add . && git commit -m 'automated deploy' && git push origin production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -29,7 +30,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
-  }
+  "devDependencies": {}
 }
